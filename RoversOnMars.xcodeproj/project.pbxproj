@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E35CEA652024320600626F9E /* String+RoversOnMars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35CEA642024320600626F9E /* String+RoversOnMars.swift */; };
 		E39583232022E43B00633585 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39583222022E43B00633585 /* main.swift */; };
+		E395832B20230F0900633585 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = E395832A20230F0900633585 /* Rover.swift */; };
+		E395832D2023130600633585 /* Facing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E395832C2023130600633585 /* Facing.swift */; };
+		E395832F2023134500633585 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E395832E2023134500633585 /* Coordinate.swift */; };
+		E39583332023909D00633585 /* Plateau.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39583322023909D00633585 /* Plateau.swift */; };
+		E3958335202390C100633585 /* Moviment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3958334202390C100633585 /* Moviment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E35CEA642024320600626F9E /* String+RoversOnMars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RoversOnMars.swift"; sourceTree = "<group>"; };
 		E395831F2022E43B00633585 /* RoversOnMars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoversOnMars; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39583222022E43B00633585 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E395832A20230F0900633585 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
+		E395832C2023130600633585 /* Facing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facing.swift; sourceTree = "<group>"; };
+		E395832E2023134500633585 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		E39583322023909D00633585 /* Plateau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plateau.swift; sourceTree = "<group>"; };
+		E3958334202390C100633585 /* Moviment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moviment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E35CEA662024333100626F9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3958334202390C100633585 /* Moviment.swift */,
+				E395832E2023134500633585 /* Coordinate.swift */,
+				E395832C2023130600633585 /* Facing.swift */,
+				E395832A20230F0900633585 /* Rover.swift */,
+				E39583322023909D00633585 /* Plateau.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E35CEA692024334A00626F9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E35CEA642024320600626F9E /* String+RoversOnMars.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E39583162022E43B00633585 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				E39583222022E43B00633585 /* main.swift */,
+				E35CEA662024333100626F9E /* Model */,
+				E35CEA692024334A00626F9E /* Extensions */,
 			);
 			path = RoversOnMars;
 			sourceTree = "<group>";
@@ -120,7 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39583332023909D00633585 /* Plateau.swift in Sources */,
+				E395832B20230F0900633585 /* Rover.swift in Sources */,
+				E3958335202390C100633585 /* Moviment.swift in Sources */,
+				E35CEA652024320600626F9E /* String+RoversOnMars.swift in Sources */,
+				E395832D2023130600633585 /* Facing.swift in Sources */,
 				E39583232022E43B00633585 /* main.swift in Sources */,
+				E395832F2023134500633585 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +276,11 @@
 		E39583272022E43B00633585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R22XZQ4UW8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -246,9 +288,11 @@
 		E39583282022E43B00633585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R22XZQ4UW8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
